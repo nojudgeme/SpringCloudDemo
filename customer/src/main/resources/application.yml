@@ -1,5 +1,5 @@
 server:
-  port: 2002
+  port: 2101
 
 eureka:
   client:
@@ -8,7 +8,7 @@ eureka:
 
 spring:
   application:
-    name: client
+    name: eureka-consumer
 
 #defaultZone 指定服务注册中心的位置
 

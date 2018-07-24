@@ -12,8 +12,8 @@ public class TestController {
     @Autowired
     RestTemplate restTemplate;
 
-    @RequestMapping("/hello")
+    @RequestMapping("/consumer")
     public String toHello(@RequestParam String name){
-        return restTemplate.getForObject("http://ClientApplication/hello?name="+name,String.class);
+        return restTemplate.getForObject("http://client/hello?name="+name,String.class);
     }
 }
