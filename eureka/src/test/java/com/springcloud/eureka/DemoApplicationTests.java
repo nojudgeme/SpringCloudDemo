@@ -1,4 +1,4 @@
-package com.springcloud.demo;
+package com.springcloud.eureka;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
