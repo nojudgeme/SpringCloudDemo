@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8084
 
 eureka:
   client:
@@ -8,6 +8,5 @@ eureka:
 
 spring:
   application:
-    name: ClientApplication
-
+    name: service-ribbon
 
