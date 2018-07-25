@@ -13,7 +13,7 @@ public class TestController {
     RestTemplate restTemplate;
 
     @RequestMapping("/consumer")
-    public String toHello(@RequestParam String name){
+    public String toHello(@RequestParam(value = "name") String name){
         return restTemplate.getForObject("http://client/hello?name="+name,String.class);
     }
 }

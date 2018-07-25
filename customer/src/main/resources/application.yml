@@ -1,14 +1,18 @@
 server:
   port: 2101
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:1001/eureka/
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8500/
 
+#8500是consul访问的默认端口
 spring:
   application:
-    name: eureka-consumer
+    name: consul-consumer
+  cloud:
+    consul:
+      port: 8500
 
 #defaultZone 指定服务注册中心的位置
 

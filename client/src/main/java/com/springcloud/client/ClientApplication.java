@@ -1,9 +1,5 @@
 package com.springcloud.client;
 
-import com.netflix.discovery.DiscoveryClient;
-import com.netflix.discovery.EurekaClient;
-import com.netflix.discovery.shared.Applications;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,7 +26,7 @@ public class ClientApplication {
     private String port;
 
     //Eureka客户端测试
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @RequestMapping(value = "/hello")
     public String test(@RequestParam String name) {
         return "hello,"+name+",i'm from "+port;
     }
