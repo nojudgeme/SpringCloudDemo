@@ -1,0 +1,15 @@
+server:
+  port: 2111
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+
+spring:
+  application:
+    name: eureka-feign
+
+#defaultZone 指定服务注册中心的位置
+
+

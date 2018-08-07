@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nojudgeme/SpringCloudDemo.git
+          username: 15172426627@163.com
+          password: 19950614qq
+server:
+  port: 1201
